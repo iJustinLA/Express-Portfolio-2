@@ -1,0 +1,80 @@
+<!-- 
+  Filename: header.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 28-05-2023
+-->
+
+<nav class="navbar sticky-top navbar-custom navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/">Justin Amaral</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'home' ? 'active' : '' %>"
+            aria-current="page"
+            href="/"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'about' ? 'active' : '' %>"
+            href="/about"
+            >About Me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'services' ? 'active' : '' %>"
+            href="/services"
+            >Services</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'projects' ? 'active' : '' %>"
+            href="/projects"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'contact' ? 'active' : '' %>"
+            href="/contact"
+            >Contact Me</a
+          >
+        </li>
+        <% if(typeof user != 'undefined') { %>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'dashboard' ? 'active' : '' %>"
+            href="/dashboard"
+            >Dashboard</a
+          >
+        </li>
+        <% }else{ %>
+        <li class="nav-item">
+          <a
+            class="nav-link <%= page === 'login' ? 'active' : '' %>"
+            href="/login"
+            >Login</a
+          >
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,59 @@
+<!-- 
+  Filename: contact.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 28-05-2023
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs', {page: 'contact'}) %>
+  <main>
+    <!-- Contact Me -->
+    <section id="contact-me" class="contact-me px-4 py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h3 class="dark-color">Contact Me</h3>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-8 offset-lg-2">
+            <form class="contact-form p-4 pt-5 pb-5 bg-light rounded-3" method="post">
+              <div class="row">
+                <div class="mb-3 col-lg-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                </div>
+                <div class="mb-3 col-lg-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="social-icons">
+                  <a href="#" class="text-decoration-none"><i class="bi bi-facebook me-3"></i></a>
+                  <a href="#" class="text-decoration-none"><i class="bi bi-twitter me-3"></i></a>
+                  <a href="#" class="text-decoration-none"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/scripts.ejs') %>
+</body>
+
+</html>

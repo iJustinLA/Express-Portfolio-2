@@ -1,0 +1,67 @@
+<!-- 
+  Filename: services.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 28-05-2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs', {page: 'services'}) %>
+  <main>
+    <section class="px-5 py-5 services">
+      <div class="container p-text">
+        <div class="text-center mb-4">
+          <h3 class="dark-color">My Services</h3>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="icon">
+                <i class="bi bi-pencil-fill"></i>
+              </div>
+              <h4>Mobile Development</h4>
+              <p>
+                I offer Mobile Development, creating tailored Android and iOS apps with seamless performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="icon">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h4>Web Development</h4>
+              <p class="font-w-600">
+                My Web Development services deliver responsive websites for an astounding user experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h4>UI/UX Design</h4>
+              <p class="font-w-600">
+                Additionally, my UI/UX Design expertise ensures visually captivating and user-friendly digital products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/scripts.ejs') %>
+</body>
+
+</html>

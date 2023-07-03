@@ -1,0 +1,464 @@
+/* 
+  Filename: style.css
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 30-05-2023
+*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.navbar-custom {
+    background-color: #1a1e70;
+    padding-top: 10px;
+    position: relative;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fc5356!important;
+}
+
+.navbar-nav .nav-link {
+    color: #fc5356!important;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    padding: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fc5356;
+    transform-origin: left top;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fc5356;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #fc5356;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* About Me Section */
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+.gray-bg {
+    background-color: #f5f5f5;
+}
+.about-avatar img {
+    max-height: 80%;
+    object-fit:fill;
+    vertical-align: middle;
+    border-style: none;
+}
+.main-hero h1, .about-text h3, .services h3, .projects h3, .contact-me h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+  .main-hero h1, .about-text h3, .services h3, .projects h3, .contact-me h3 {
+    font-size: 35px;
+  }
+}
+.about-text h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .about-text h6 {
+    font-size: 18px;
+  }
+}
+.p-text p {
+  font-size: 18px;
+  max-width: 450px;
+}
+.about-text p mark {
+  font-weight: 600;
+  color: #1a1e70;
+}
+
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #1a1e70;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 11px;
+  width: 1px;
+  height: 12px;
+  background: #1a1e70;
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  margin: auto;
+  opacity: 0.5;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .about-avatar {
+    margin-top: 30px;
+  }
+}
+
+.about-section .counter {
+  padding: 22px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+.about-section .counter .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about-section .counter .count {
+  font-weight: 700;
+  color: #1a1e70;
+  margin: 0 0 5px;
+}
+.about-section .counter p {
+  font-weight: 600;
+  margin: 0;
+}
+mark {
+    background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+.theme-color {
+    color: #fc5356;
+}
+.dark-color {
+    color: #1a1e70;
+}
+
+/* Services Section */
+.services h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1e70;
+}
+.services .service-box p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.service-box {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-box:hover {
+  background-color: #1a1e70;
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(31, 45, 61, 0.2);
+  color: #ffffff;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1a1e70;
+  transition: transform 1s;
+}
+
+.service-box:hover .icon {
+  transform: translateY(-10px);
+  color: #fff;
+}
+
+.service-box h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1e70;
+}
+
+.service-box:hover h4 {
+  color: #fff;
+}
+
+.service-box p {
+  opacity: 0.8;
+}
+
+.service-box:hover p {
+  opacity: 1;
+}
+
+/* My Projects Section */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1e70;
+}
+
+.project-box {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  cursor: pointer;
+  max-width: 100%;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(31, 45, 61, 0.2);
+}
+
+.project-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+  display: block;
+}
+
+.project-content {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1e70;
+  margin-bottom: 1rem;
+}
+
+.project-text {
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #1a1e70;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ec5568;
+}
+
+/* Contact Me Section */
+.contact-form {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+}
+
+.contact-form label {
+  font-weight: 500;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+.social-icons a:hover i {
+  color: #495057;
+  transition: color 0.3s;
+}
+
+/* Custom Components and Designs */
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Change the background and border color for each button variant */
+.btn-primary {
+  background-color: #1a1e70;
+  border-color: #1a1e70;
+}
+
+.btn-secondary {
+  background-color: #718096;
+  border-color: #718096;
+}
+
+/* Add hover and active states for each button variant */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #1f258b;
+  border-color: #1f258b;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: #5a6678;
+  border-color: #5a6678;
+}
+
+/* Add styles for disabled buttons */
+.btn[disabled] {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* Customize form inputs, textareas, and selects */
+.form-control {
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.form-control:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add border color and more prominent box-shadow on focus */
+.form-control:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: #1a1e70;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize checkboxes and radio buttons */
+.form-check-input:checked {
+  background-color: #1a1e70;
+  border-color: #1a1e70;
+}
+
+.form-check-input:checked:focus {
+  box-shadow: 0 0 0 2px rgba(28, 123, 214, 0.25);
+}
+
+/* Customize cards */
+.card {
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Customize navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize Tooltips and Popovers */
+.tooltip-inner {
+  background-color: #1c7bd6;
+  border-radius: 5px;
+}
+
+.popover {
+  border-radius: 5px;
+}
+
+.popover-header {
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.popover-body {
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+footer h5 {
+  font-weight: 600;
+}
+
+/* Extra */
+
+.hero-section {
+  position: relative;
+  padding: 100px 0;
+}
+
+
+.hero-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 90%;
+  z-index: 10;
+  position: relative;
+  padding: 20px;
+  background-color: #fc5356;
+  background-image: linear-gradient(40deg, #1a1e70 50%, transparent 50%);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
+

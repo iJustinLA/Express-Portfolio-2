@@ -1,0 +1,72 @@
+<!-- 
+  Filename: dashboard.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 23-06-2023
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('../partials/head.ejs') %>
+  </head>
+
+  <body>
+    <%- include('../partials/header.ejs', {page: 'dashboard'}) %>
+    <main>
+      <section id="contact-me" class="contact-me px-4 py-5">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="text-center mb-4 col-lg-8 offset-lg-2">
+              <h3 class="dark-color">Contact List</h3>
+            </div>
+          </div>
+          <div class="gy-4">
+            <a class="btn btn-primary btn-lg" href="/dashboard/contacts/insert">Add New Contact</a>
+          </div>
+          <div class="row gy-4">
+            <div class="container mt-5 table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Contact Number</th>
+                    <th scope="col">Email Address</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% contacts.forEach((contact, index) => { %>
+                  <tr>
+                    <td><%= contact.contactName %></td>
+                    <td><%= contact.contactNumber %></td>
+                    <td><%= contact.emailAddress %></td>
+                    <td>
+                      <a href="/dashboard/contacts/<%= contact.contactId %>/update"
+                        class="btn btn-primary update-contact"
+                        data-contactId="<%= contact.contactId %>"
+                      >
+                        Update
+                    </a>
+                      <a
+                        href="/dashboard/contacts/<%= contact.contactId %>/delete"
+                        class="btn btn-danger delete-contact mt-2 mt-md-0"
+                        data-contactId="<%= contact.contactId %>"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <% }) %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('../partials/footer.ejs') %> <%-
+    include('../partials/scripts.ejs') %>
+  </body>
+</html>

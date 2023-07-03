@@ -1,0 +1,70 @@
+<!-- 
+  Filename: projects.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 28-05-2023
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs', {page: 'projects'}) %>
+  <main>
+    <!-- Projects section -->
+    <section id="projects" class="projects bg-light px-5 py-5">
+      <div class="container">
+
+        <div class="text-center mb-4">
+          <h3 class="dark-color">My Projects</h3>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-4 mb-4">
+            <div class="project-box">
+              <img src="/images/boardgame-shop.PNG" class="project-img" alt="Project title" />
+              <div class="project-content">
+                <h5 class="project-title">Board Game Shop</h5>
+                <p class="project-text">
+                  Shop for your favorite board games online with ratings posted on each game.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="project-box">
+              <img src="/images/design-project.PNG" class="project-img" alt="Design Project" />
+              <div class="project-content">
+                <h5 class="project-title">Design Project</h5>
+                <p class="project-text">
+                  Learn more about minimalist design through this webpage here
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="project-box">
+              <img src="/images/survey-project.PNG" class="project-img" alt="Project title" />
+              <div class="project-content">
+                <h5 class="project-title">Survey Project</h5>
+                <p class="project-text">
+                  Take a survey on how you&apos;re schooling is going and rate your experience.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/scripts.ejs') %>
+</body>
+
+</html>

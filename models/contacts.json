@@ -1,0 +1,98 @@
+[
+  {
+    "contactName": "Aida Baig",
+    "contactNumber": "311-456-7890",
+    "emailAddress": "aida@example.com",
+    "contactId": "aaa12f"
+  },
+  {
+    "contactId": "aaa123",
+    "contactName": "Ali Muhammad",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaa123@example.com"
+  },
+  {
+    "contactName": "Ali Muhammad",
+    "contactNumber": "311-456-4891",
+    "emailAddress": "example@gmail.com",
+    "contactId": "_eT3Q6"
+  },
+  {
+    "contactName": "Ali Muhammad",
+    "contactNumber": "311-456-4891",
+    "emailAddress": "example@gmail.com",
+    "contactId": "54mQVA"
+  },
+  {
+    "contactId": "aae123",
+    "contactName": "Alice Gray",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aae123@example.com"
+  },
+  {
+    "contactId": "aaf223",
+    "contactName": "Daren Smith",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf223@example.com"
+  },
+  {
+    "contactId": "aab123",
+    "contactName": "I Justinla",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aab123@example.com"
+  },
+  {
+    "contactId": "aad123",
+    "contactName": "John Doe",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aad123@example.com"
+  },
+  {
+    "contactId": "aaf123",
+    "contactName": "John Doe",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf123@example.com"
+  },
+  {
+    "contactId": "aac123",
+    "contactName": "John Smith",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aac123@example.com"
+  },
+  {
+    "contactId": "aaf723",
+    "contactName": "John Smith",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf723@example.com"
+  },
+  {
+    "contactId": "aaf823",
+    "contactName": "John Smith",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf823@example.com"
+  },
+  {
+    "contactId": "aaf423",
+    "contactName": "Liz Erd",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf423@example.com"
+  },
+  {
+    "contactId": "aaf523",
+    "contactName": "Ray Sin",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf523@example.com"
+  },
+  {
+    "contactId": "aaf623",
+    "contactName": "Rod Knee",
+    "contactNumber": "123-456-7890",
+    "emailAddress": "aaf623@example.com"
+  },
+  {
+    "contactName": "Najib Ullah",
+    "contactNumber": "312-373-1175",
+    "emailAddress": "naj@gmail.com",
+    "contactId": "7AgN6D"
+  }
+]

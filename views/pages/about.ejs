@@ -1,0 +1,90 @@
+<!-- 
+  Filename: about.ejs
+  Student's Name: Justin Amaral
+  StudentID: 301230988
+  Date: 28-05-2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+  <%- include('../partials/header.ejs', {page: 'about'}) %>
+  <main>
+    <div class="main-hero col-xxl-8 px-5 py-5">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="hero-img col-10 col-sm-8 col-lg-6">
+            <img src="/images/pic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="600" loading="lazy">
+          </div>
+          <div class="p-text col-lg-6">
+            <h1 class="dark-color mb-3">Hi, I&apos;m Justin Amaral a software engineer</h1>
+            <p>Empowering individuals and organizations through innovative software solutions, by leveraging my expertise in engineering and unwavering commitment to excellence, to consistently deliver user-centric, scalable, and efficient technologies.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="/docs/justin-amaral-resume.pdf" type="button" target="_blank" class="btn btn-primary btn-lg px-4 me-md-2">My Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="px-4 py-5 section about-section bg-light" id="about">
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div class="col-lg-6 order-lg-1 order-2 d-flex justify-content-center">
+            <div class="about-avatar">
+              <img src="/images/avatar.png" title="" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1 d-flex flex-column align-items-center">
+            <div class="p-text about-text go-to text-center text-lg-start">
+              <h3 class="dark-color">About Me</h3>
+              <h6 class="theme-color lead">
+                A software engineer based in Toronto, Ontario
+              </h6>
+              <p>
+                Justin Amaral is fueled by his passion for all things tech. He is a current student studying software engineering but has always dabbled in and loved technology. Expanding his skill sets he often finds him self learning and trying new things. Currently Justin works with multiple YouTube personalities with their content creation while also working full-time and tackling school full-time as well.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="counter mt-4">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="count-data text-center">
+                <h6 class="count h2" data-to="25" data-speed="25">25</h6>
+                <p class="m-0px font-w-600">Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="count-data text-center">
+                <h6 class="count h2" data-to="50" data-speed="50">50</h6>
+                <p class="m-0px font-w-600">Project Completed</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="count-data text-center">
+                <h6 class="count h2" data-to="12" data-speed="12">12</h6>
+                <p class="m-0px font-w-600">Technology Talks</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="count-data text-center">
+                <h6 class="count h2" data-to="4" data-speed="4">04</h6>
+                <p class="m-0px font-w-600">Awards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%- include('../partials/footer.ejs') %>
+  <%- include('../partials/scripts.ejs') %>
+</body>
+
+</html>
